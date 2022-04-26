@@ -5,8 +5,8 @@ import "./Pokecard.css";
  * @param {array} Any pokemon info
  * @return HTML
  */
-function Pokedex({ pokemons }) {
-  console.log(pokemons);
+function Pokedex({ pokemons, exp, isWinner }) {
+
   return (
     <div className="card-container">
       {pokemons.map((pokemon) => (
@@ -17,6 +17,12 @@ function Pokedex({ pokemons }) {
           base_experience={pokemon.base_experience}
         />
       ))}
+      <div>
+        Total EXP: {exp}
+      </div>
+      <h2>
+        {isWinner ? "This hand wins!!" : ""}
+      </h2>
     </div>
   );
 }
