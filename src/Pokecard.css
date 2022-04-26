@@ -1,0 +1,12 @@
+.Pokecard {
+    background-color: rgba(185, 184, 181, 0.568);
+    border-radius: 10%;
+    width: 200px;
+    margin: 10px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
